@@ -51,7 +51,10 @@ key: "374659e50c"
 ```
 
 `@part1`
-
+Selection biases:
+1. Survivorship bias
+2. Confirmation bias
+3. Sample selection bias (job training)
 
 
 `@part2`
