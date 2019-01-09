@@ -51,16 +51,22 @@ key: "374659e50c"
 ```
 
 `@part1`
-Selection biases:
-1. Survivorship bias
-2. Confirmation bias
-3. Sample selection bias (job training)
+Selection biases (survivorship bias, confirmation bias, sample selection bias).
 
 
 `@part2`
-```table(wagereg$MARR)
-lm(log(WAGE) ~ SEX, data = subset(wagereg,MARR==1))
-lm(log(WAGE) ~ SEX, data = wagereg[sample(500,350),])
+```
+> table(wagereg$MARR)
+  0   1 
+184 350 
+> lm(log(WAGE) ~ SEX, data = subset(wagereg,MARR==1))
+Coefficients:
+(Intercept)          SEX  
+     2.2665      -0.3358  
+> (lm(log(WAGE) ~ SEX, data = wagereg[sample(500,350),]))
+Coefficients:
+(Intercept)          SEX  
+     2.1361      -0.1798  
 ```
 
 
