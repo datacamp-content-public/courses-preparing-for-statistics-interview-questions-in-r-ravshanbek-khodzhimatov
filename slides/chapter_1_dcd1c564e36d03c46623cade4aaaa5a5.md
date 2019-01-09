@@ -43,7 +43,7 @@ What if they fail?{{5}}
 
 
 ---
-## When random sampling fails
+## Non-random sampling
 
 ```yaml
 type: "TwoRows"
@@ -52,9 +52,6 @@ key: "374659e50c"
 
 `@part1`
 Selection biases (survivorship bias, confirmation bias, sample selection bias).
-
-
-`@part2`
 ```
 > table(wagereg$MARR)
   0   1 
@@ -67,6 +64,41 @@ Coefficients:
 Coefficients:
 (Intercept)          SEX  
      2.1361      -0.1798  
+```
+
+
+`@part2`
+
+
+
+`@script`
+
+
+
+---
+## Collinearity
+
+```yaml
+type: "FullSlide"
+key: "6f562a200b"
+```
+
+`@part1`
+No meaning, infinitely many answers, R omits.
+```
+> wagereg$BIRTHYEAR <- 2019 - wagereg$AGE
+> lm(log(WAGE) ~ SEX + AGE, data=wagereg)
+Coefficients:
+(Intercept)          SEX          AGE  
+   1.814098    -0.249419     0.009761  
+> lm(log(WAGE) ~ SEX + BIRTHYEAR, data=wagereg)
+Coefficients:
+(Intercept)          SEX    BIRTHYEAR  
+  21.521221    -0.249419    -0.009761  
+> lm(log(WAGE) ~ SEX + AGE + BIRTHYEAR, data=wagereg)
+Coefficients:
+(Intercept)          SEX          AGE    BIRTHYEAR  
+   1.814098    -0.249419     0.009761           NA  
 ```
 
 
