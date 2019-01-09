@@ -21,6 +21,51 @@ title: Statistical Consultant
 
 
 ---
+## Assumptions of Linear Regression
+
+```yaml
+type: "FullSlide"
+key: "0256945d07"
+```
+
+`@part1`
+1. Linearity in parameters{{1}}
+2. Random sampling{{2}}
+3. No perfect multicollinearity{{3}}
+4. Zero conditional mean of error term: E(u|x) = 0{{4}}
+
+
+What if they fail?{{5}}
+
+
+`@script`
+
+
+
+---
+## When random sampling fails
+
+```yaml
+type: "TwoRows"
+key: "374659e50c"
+```
+
+`@part1`
+
+
+
+`@part2`
+```table(wagereg$MARR)
+lm(log(WAGE) ~ SEX, data = subset(wagereg,MARR==1))
+lm(log(WAGE) ~ SEX, data = wagereg[sample(500,350),])
+```
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
