@@ -154,7 +154,7 @@ EDUCATION    0.089025   0.007661  11.620  < 2e-16 ***
 
 
 `@script`
-
+u is called error term, but it's more correct to call it unobserved effects. This includes billions of variables irrelevant to our model. Like, in our regression, the color of your jeans or the maiden name of your mom, the planet that you live in - are all omitted but they make zero affect on average.
 
 
 ---
