@@ -84,7 +84,7 @@ So, all of our statistics depends on the random sampling assumption. Otherwise, 
 
 You might have heard of survivorship bias, when people interviewed the ship wreck survivors who told that the reason they are alive is that they didn't give up, implying that dead people gave up, which we don't know. Maybe those who died, didn't give up until their last breath, maybe they just got unlucky.
 
-Also, you might have heard of affects of voluntary job training on the worker performance. But the sample is wrong - people who volunteered to participate in a job training are inherently not random - they are more motivated than those, who didn't.
+Also, you might have heard of effects of voluntary job training on the worker performance. But the sample is wrong - people who volunteered to participate in a job training are inherently not random - they are more motivated than those, who didn't.
 
 In this code, we can see that there are 350 married people. The coefficients differ if we select those 350 randomly or based on their status.
 
