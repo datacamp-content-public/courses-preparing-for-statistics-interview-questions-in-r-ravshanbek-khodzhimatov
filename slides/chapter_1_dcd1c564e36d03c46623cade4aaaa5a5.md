@@ -116,7 +116,9 @@ Coefficients:
 
 
 `@script`
+Collinearity happens when two variables carry exactly the same information. Like weight in kilograms and weight in pounds, or age and birthyear.
 
+R detects this automatically, and deactivates one of the variables. You can see that in code below.
 
 
 ---
