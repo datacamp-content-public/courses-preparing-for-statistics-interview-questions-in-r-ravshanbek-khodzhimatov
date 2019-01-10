@@ -86,7 +86,7 @@ You might have heard of survivorship bias, when people interviewed the ship wrec
 
 Also, you might have heard of effects of voluntary job training on the worker performance. But the sample is wrong - people who volunteered to participate in a job training are inherently not random - they are more motivated than those, who didn't.
 
-In this code, we can see that there are 350 married people. The coefficients differ if we select those 350 randomly or based on their status.
+Let's take a look at the wage regression. In this code, we can see that there are 350 married people. The coefficients differ if we select those 350 randomly or based on their status.
 
 
 ---
