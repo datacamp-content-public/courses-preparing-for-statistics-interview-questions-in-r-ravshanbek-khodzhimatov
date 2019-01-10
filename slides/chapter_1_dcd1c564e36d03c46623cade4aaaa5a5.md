@@ -17,7 +17,7 @@ title: Statistical Consultant
 
 
 `@script`
-
+In this lesson, we are going to review the Linear Regression assumptions and see what happens if they fail.
 
 
 ---
@@ -39,7 +39,15 @@ What if they fail?{{5}}
 
 
 `@script`
+So, firstly, the regression equation should be linear in parameters as we have discussed this before.
 
+The sample should be random for statistics to work.
+
+There should be no perfect multicollinearity between variables, meaning no two explanatory variables should mean the same thing.
+
+The conditional error should have an average of 0.
+
+So, let's see what they mean and why are they important.
 
 
 ---
@@ -149,6 +157,7 @@ EDUCATION    0.089025   0.007661  11.620  < 2e-16 ***
 ```yaml
 type: "FullSlide"
 key: "64c03e877a"
+center_content: false
 ```
 
 `@part1`
