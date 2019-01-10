@@ -116,9 +116,9 @@ key: "e359492d6d"
 ```
 
 `@part1`
-- u means "error term" and "unobserved variables" (mother's maiden name, color of jeans)
-- E[y|x] = E[xb+u|x] = xb + E[u|x]
-- If E[u|x]>0, then we have omitted an important variable.
+- u means "error term" and "unobserved variables" (mother's maiden name, color of jeans){{1}}
+- E[y|x] = E[xb+u|x] = xb + E[u|x]{{2}}
+- If E[u|x]>0, then we have omitted an important variable.{{3}}
 
 ```
 > summary(lm(log(WAGE) ~ SEX + AGE + SECTOR, data=wagereg))
@@ -126,7 +126,9 @@ key: "e359492d6d"
 (Intercept)  1.809693   0.073882  24.494  < 2e-16 ***
 SEX         -0.245413   0.044573  -5.506 5.73e-08 ***
 AGE          0.009675   0.001873   5.164 3.42e-07 ***
-SECTOR       0.020861   0.041277   0.505    0.614    
+SECTOR       0.020861   0.041277   0.505    0.614
+```{{4}}
+```
 > summary(lm(log(WAGE) ~ SEX + AGE + SECTOR + EDUCATION, data=wagereg))
              Estimate Std. Error t value Pr(>|t|)    
 (Intercept)  0.526584   0.128647   4.093 4.92e-05 ***
@@ -134,7 +136,7 @@ SEX         -0.236854   0.039828  -5.947 4.97e-09 ***
 AGE          0.012350   0.001689   7.310 9.90e-13 ***
 SECTOR       0.099452   0.037492   2.653  0.00823 ** 
 EDUCATION    0.089025   0.007661  11.620  < 2e-16 ***
-```
+```{{5}}
 
 
 `@script`
