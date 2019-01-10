@@ -84,7 +84,8 @@ key: "6f562a200b"
 ```
 
 `@part1`
-No meaning, infinitely many answers, R omits.
+No meaning, infinitely many answers, R omits. Same with (0,1).
+
 ```
 > wagereg$BIRTHYEAR <- 2019 - wagereg$AGE
 > lm(log(WAGE) ~ SEX + AGE, data=wagereg)
@@ -100,6 +101,38 @@ Coefficients:
 (Intercept)          SEX          AGE    BIRTHYEAR  
    1.814098    -0.249419     0.009761           NA  
 ```
+
+
+`@script`
+
+
+
+---
+## Non-zero mean error
+
+```yaml
+type: "FullSlide"
+key: "e359492d6d"
+```
+
+`@part1`
+E[u|x] = 0
+
+
+`@script`
+
+
+
+---
+## Measurement error
+
+```yaml
+type: "FullSlide"
+key: "64c03e877a"
+```
+
+`@part1`
+32
 
 
 `@script`
