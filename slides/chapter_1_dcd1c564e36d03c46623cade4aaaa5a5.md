@@ -152,7 +152,8 @@ key: "64c03e877a"
 ```
 
 `@part1`
-32
+- Y = xb + u, where Y = y - e => y = xb + (u+e) : fine, just greater variance
+- y = Xb + u, where X = x + e => y = xb + (be + u), and E[be+u|x]>0, biased and inconsistent.
 
 
 `@script`
