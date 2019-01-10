@@ -156,6 +156,10 @@ EDUCATION    0.089025   0.007661  11.620  < 2e-16 ***
 `@script`
 u is called error term, but it's more correct to call it unobserved effects. This includes billions of variables irrelevant to our model. Like, in our regression, the color of your jeans or the maiden name of your mom, the planet that you live in - are all omitted but they make zero affect on average.
 
+But if, on average, the unobserved term makes nonzero effect, then we have omitted an important variable.
+
+You can see in the code that SECTOR of work is not important to WAGE and insignificant, but when you EDUCATION, it becomes much more controlled for - because education does affect wages.
+
 
 ---
 ## Measurement error
