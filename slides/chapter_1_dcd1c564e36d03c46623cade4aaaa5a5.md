@@ -180,7 +180,7 @@ center_content: false
 `@script`
 Measurement error is the worst problem you can get - so much depends on the underlying data.
 
-You can offset all, if you know the error. But if you don't, then if dependent variable is measured with error, nothing changes - do your regression, just know that variance is larger.
+You can offset all, if you know the error. For example, people underreport their savings in surveys. But if you don't, then if dependent variable is measured with error, nothing changes - do your regression, just know that variance is larger.
 
 If explanatory variable is measured with error, and you don't know the offset, then there is nothing you can do. You need a good data.
 
